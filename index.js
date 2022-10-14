@@ -3,18 +3,18 @@
 const outputField = document.getElementById('output');
 const inputField = document.getElementById('input');
 const inputButton = document.getElementById('convert');
-const clearMessage = document.getElementById('clear')
+// const clearMessage = document.getElementById('clear')
 
 const buttonPress = () => {
   const inputValue = document.getElementById('input').value;
   const binary = parseInt(inputValue).toString(2);
+
   if (inputValue === '' || NaN) {
     outputField.innerHTML = 'You must enter a number!'
   } else {
     outputField.innerHTML = `The Binary Equivalent of ${inputValue} is: ${binary}`;
+    // clearMessage.innerHTML = `Press "c" to clear`
   }
-
-  clearMessage.innerHTML = `Press "c" to clear`
   return binary;
 }
 
@@ -59,6 +59,7 @@ inputButton.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     buttonPress();
+    clearField();
   }
 });
 
@@ -66,4 +67,5 @@ inputButton.addEventListener("keypress", function (event) {
 inputButton.addEventListener("click", function (event) {
   event.preventDefault();
   buttonPress();
+  clearField();
 });
