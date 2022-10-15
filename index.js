@@ -11,7 +11,7 @@ const buttonPress = () => {
   const binary = parseInt(inputValue).toString(2);
 
   if (inputValue === '' || NaN) {
-    outputField.innerHTML = 'You must enter a number!'
+    outputField.innerHTML = "<p>There are 10 types of people: Those who understand Binary, and those who don't!</p><p><em>You must enter a Number!</em></p>"
   } else {
     outputField.innerHTML = `The Binary Equivalent of ${inputValue} is: ${binary}`;
     // clearMessage.innerHTML = `Press "c" to clear`

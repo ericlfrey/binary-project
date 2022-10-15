@@ -6,6 +6,7 @@
 
 html {
   height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   color: darkgray;
   text-align: center;
   margin: 0;
-  background-image: linear-gradient(to bottom, black, green);
+  background-image: linear-gradient(to bottom, black, darkgreen);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -38,7 +39,9 @@ input {
   height: 30px;
   border-radius: 5px;
   border: solid 1px black;
-  padding: 5px 10px
+  padding: 5px 10px;
+  width: 50%;
+  text-align: center;
 }
 
 input:focus {
@@ -70,11 +73,6 @@ button:active {
   -webkit-transform: scale(1.1);
 }
 
-span {
-  width: 100px;
-  height: 20px;
-}
-
 .input-button-wrapper {
   /* margin: 20px; */
   display: flex;
@@ -90,4 +88,13 @@ span {
   color: #202020;
   opacity: 1;
   font-size: 15px;
+}
+
+.textfield {
+  display: flex;
+  justify-content: center;
+}
+
+.output {
+  width: 60%;
 }
