@@ -5,19 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./media/f-logo.png">
   <link rel="stylesheet" href="./styles.css">
   <title>Binary Project</title>
 </head>
 
 <body>
-  <h1>Binary Conversion Project</h1>
-  <div class="input-button">
-    <input id="input" type="number" placeholder="Your Boring Number" autofocus>
-    <button id="convert" onclick="buttonTest(), clearField()">Convert!</button>
-  </div>
-  <div class="textfield">
-    <span id="output"></span>
-    <div id="clear"></div>
+  <div class="wrapper">
+    <h1>Binary Conversion Project</h1>
+    <input class="input-button" id="input" type="number" placeholder="Your Boring Number" autofocus>
+    <div class="input-button-wrapper">
+      <button class="input-button" id="convert" onclick="clearField()">Convert!</button>
+    </div>
+    <div class="textfield">
+      <span id="output"></span>
+      <div id="clear"></div>
+    </div>
   </div>
   <script src="./index.js"></script>
 </body>
