@@ -6,6 +6,7 @@ const inputButton = document.getElementById('convert');
 // const clearMessage = document.getElementById('clear')
 
 const buttonPress = () => {
+  inputField.focus();
   const inputValue = document.getElementById('input').value;
   const binary = parseInt(inputValue).toString(2);
 
